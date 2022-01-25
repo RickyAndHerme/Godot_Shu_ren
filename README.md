@@ -12,19 +12,15 @@ Godot Engine修練場で公開している中途半端なサンプルプロジ�
 #### * シーン遷移のサンプル  
 ![シーン遷移のサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/SceneMove.gif)  
 
-
-* シューティングのサンプル  
+#### * シューティングのサンプル  
 ![シューティングのサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/ShootingBase101.gif)  
 
-
-* ビジュアルノベル風のサンプル  
+#### * ビジュアルノベル風のサンプル  
 ![ビジュアルノベル風のサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/SampleNovelGame_v100.gif)
 ![ビジュアルノベル風(枠なし)のサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/SoundNovelGame_v101.gif)  
 
-
-* アクションRPGのサンプル  
+#### * アクションRPGのサンプル  
 ![アクションRPGのサンプル](https://blog-imgs-150.fc2.com/i/6/z/i6zyr7er68b9/ARPG.gif)  
 
-
-* もうちょっとマシなシューティングのサンプル  
+#### * もうちょっとマシなシューティングのサンプル  
 ![もちょっとマシなシューティングのサンプル](https://blog-imgs-150.fc2.com/i/6/z/i6zyr7er68b9/TutorialSTG_STROKE.gif)  
