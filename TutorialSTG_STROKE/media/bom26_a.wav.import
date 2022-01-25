@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bom26_a.wav-853d20bae5d440a08079fe200e23f8b6.sample"
+
+[deps]
+
+source_file="res://media/bom26_a.wav"
+dest_files=[ "res://.import/bom26_a.wav-853d20bae5d440a08079fe200e23f8b6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
