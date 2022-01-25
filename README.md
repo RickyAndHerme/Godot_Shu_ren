@@ -9,7 +9,7 @@ Godot Engine修練場で公開している中途半端なサンプルプロジ�
 **Godot Engine修練場**：[https://shu-ren.fc2.net/](https://shu-ren.fc2.net/)  
 
 ----------------------------------------------------------
-## * シーン遷移のサンプル  
+#### * シーン遷移のサンプル  
 ![シーン遷移のサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/SceneMove.gif)  
 
 
