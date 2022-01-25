@@ -7,3 +7,5 @@ Godot Engine修練場で公開しているサンプルプロジェクトのす�
 ただし如何なる損害に対しても作者はその保障義務を一切負わないものとします。<br>
 
 Godot Engine修練場：https://shu-ren.fc2.net/
+
+![アクションRPGのサンプル](https://blog-imgs-150.fc2.com/i/6/z/i6zyr7er68b9/ARPG_thumb.png)
