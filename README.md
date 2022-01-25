@@ -8,18 +8,18 @@ Godot Engine修練場で公開しているサンプルプロジェクトのす�
 
 *Godot Engine修練場*：[https://shu-ren.fc2.net/](https://shu-ren.fc2.net/)  
 
-*シーン遷移のサンプル  
+* シーン遷移のサンプル  
 ![シーン遷移のサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/SceneMove.gif)  
 
-*シューティングのサンプル  
+* シューティングのサンプル  
 ![シューティングのサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/ShootingBase101.gif)  
 
-*ビジュアルノベル風(枠なし)のサンプル  
+* ビジュアルノベル風(枠なし)のサンプル  
 ![ビジュアルノベル風のサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/SampleNovelGame_v100.gif)
 ![ビジュアルノベル風(枠なし)のサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/SoundNovelGame_v101.gif)  
 
-*アクションRPGのサンプル  
+* アクションRPGのサンプル  
 ![アクションRPGのサンプル](https://blog-imgs-150.fc2.com/i/6/z/i6zyr7er68b9/ARPG.gif)  
 
-*もちょっとマシなシューティングのサンプル  
+* もちょっとマシなシューティングのサンプル  
 ![もちょっとマシなシューティングのサンプル](https://blog-imgs-150.fc2.com/i/6/z/i6zyr7er68b9/TutorialSTG_STROKE.gif)  
