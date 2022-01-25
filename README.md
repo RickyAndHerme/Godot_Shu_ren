@@ -8,4 +8,4 @@ Godot Engine修練場で公開しているサンプルプロジェクトのす�
 
 Godot Engine修練場：https://shu-ren.fc2.net/
 
-![アクションRPGのサンプル](https://blog-imgs-150.fc2.com/i/6/z/i6zyr7er68b9/ARPG_thumb.png)
+![アクションRPGのサンプル](https://blog-imgs-150.fc2.com/i/6/z/i6zyr7er68b9/ARPG.gif)
