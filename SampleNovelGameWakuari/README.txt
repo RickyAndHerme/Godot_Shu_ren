@@ -1,64 +1,62 @@
 ===================================================================
-�@�@�@�@SampleNovelGame 
+　　　　SampleNovelGame 
 
-�@�@�@�@��ҁ@���b�L�[
-	�@�@URL�@https://shu-ren.fc2.net/�@
+　　　　作者　リッキー
+	　　URL　https://shu-ren.fc2.net/　
 ===================================================================
-�y�T�v�z
+【概要】
 
-�@�r�W���A���m�x�����Q�[���̊�{�I�ȃT���v���ł��B
-�@
-�@��������@
-�@�E�}�E�X�̍��N���b�N�Ői�s���܂��B
+　ビジュアルノベル風ゲームの基本的なサンプルです。
+　
+　◆操作方法
+　・マウスの左クリックで進行します。
 
-�@���T���v���̊T�v
-�@�E���S���/�^�C�g�����/���̑��̃V�[���J��
-�@�E�V�i���I�t�@�C���̓ǂݍ���
-�@�E�e�L�X�g�E�B���h�E�\��
-�@�E�ꕶ���P�ʂ̃e�L�X�g�\��
-�@�EBGM�̍Đ�
+　◆サンプルの概要
+　・ロゴ画面/タイトル画面/その他のシーン遷移
+　・シナリオファイルの読み込み
+　・テキストウィンドウ表示
+　・一文字単位のテキスト表示
+　・BGMの再生
+　
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ 
+【実行環境】
 
-�@�Egame�t�H���_�ɃQ�[���̎��s�t�@�C�������܂����B
-�@
-�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�| 
-�y���s���z
+・バージョン：Godot Engine v3.2.3.stable
+・OS　　　　：Windows 10 64-bit
+・CPU　 　　：AMD FX-8370E Eight-Core Processor
+・メモリ　　：16GB
+・GPU　 　　：NVIDIA GeForce GTX 750 Ti 
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ 
+【サポート】
 
-�E�o�[�W�����FGodot Engine v3.2.3.stable
-�EOS�@�@�@�@�FWindows 10 64-bit
-�ECPU�@ �@�@�FAMD FX-8370E Eight-Core Processor
-�E�������@�@�F16GB
-�EGPU�@ �@�@�FNVIDIA GeForce GTX 750 Ti 
-�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�| 
-�y�T�|�[�g�z
+　誤記、バグなど発見しましたらコメントにでもどうぞ。
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ 
+【免責事項】
 
-�@��L�A�o�O�Ȃǔ������܂�����R�����g�ɂł��ǂ����B
-�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�| 
-�y�Ɛӎ����z
+　本サンプルデータ(フォントを除くプログラム、画像、サウンド等含む全て)の著作権は
+　リッキーが保持しておりますが二次利用は可能とします。
+　ゲーム制作等にご利用ください。
+　ただし如何なる損害に対しても作者はその保障義務を一切負わないものとします。
 
-�@�{�T���v���f�[�^(�v���O�����A�摜�A�T�E���h���܂ޑS��)�̒��쌠��
-�@���b�L�[���ێ����Ă���܂����A�摜�A�T�E���h�ȊO�͓񎟗��p�͉\�Ƃ��܂��B
-�@�Q�[�����쓙�ɂ����p���������B
-�@�������@���Ȃ鑹�Q�ɑ΂��Ă���҂͂��̕ۏ�`������ؕ���Ȃ����̂Ƃ��܂��B
+【ライセンス】
 
-�y���C�Z���X�z
+　このゲームは、次のライセンスの下で利用可能なGodotエンジンを使用しています:
 
-�@���̃Q�[���́A���̃��C�Z���X�̉��ŗ��p�\��Godot�G���W�����g�p���Ă��܂�:
+　Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) 2014-2020 Godot Engine contributors.
+　Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+　and associated documentation files (the "Software"), to deal in the Software without restriction, 
+　including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+　and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
+　subject to the following conditions:
 
-�@Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) 2014-2020 Godot Engine contributors.
-�@Permission is hereby granted, free of charge, to any person obtaining a copy of this software
-�@and associated documentation files (the "Software"), to deal in the Software without restriction, 
-�@including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
-�@and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
-�@subject to the following conditions:
+　上記の著作権表示およびこの許可通知は、ソフトウェアのすべてのコピーまたは大部分に含まれるものとします。
 
-�@��L�̒��쌠�\������т��̋��ʒm�́A�\�t�g�E�F�A�̂��ׂẴR�s�[�܂��͑啔���Ɋ܂܂����̂Ƃ��܂��B
-
-�@�{�\�t�g�E�F�A�́A�s�ꐫ�A����̖ړI�ւ̓K�����A����ь����̔�N�Q�̕ۏ؂��܂݂܂����A
-�@�����܂��َ͖����킸�A�����Ɍ��肳��Ă��Ȃ������Ȃ�ۏ؂��Ȃ��Ɂu����̂܂܁v�񋟂���܂��B
-�@�����Ȃ�ꍇ�ɂ����Ă��A��҂܂��͒��쌠�҂́A�_��A�s�@�s�ׁA�܂��͂��̑��̍s�ׁA
-�@�{�\�t�g�E�F�A�܂��͖{�\�t�g�E�F�A�̎g�p�܂��͑��̎���ɋN���������͊֘A���邢���Ȃ鐿���A
-�@���Q�܂��͂��̑��̐ӔC�ɂ��Ă��ӔC�𕉂�Ȃ����̂Ƃ��܂��B
-�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�|�| 
-�y�X�V�����z
-2020/11/3�@Ver1.0
-�@�E�ŏ��̃����[�X�B
+　本ソフトウェアは、市場性、特定の目的への適合性、および権利の非侵害の保証を含みますが、
+　明示または黙示を問わず、これらに限定されていないいかなる保証もなしに「現状のまま」提供されます。
+　いかなる場合においても、作者または著作権者は、契約、不法行為、またはその他の行為、
+　本ソフトウェアまたは本ソフトウェアの使用または他の取引に起因もしくは関連するいかなる請求、
+　損害またはその他の責任についても責任を負わないものとします。
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ 
+【更新履歴】
+2020/11/3　Ver1.0
+　・最初のリリース。
