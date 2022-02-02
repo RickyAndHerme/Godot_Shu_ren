@@ -26,15 +26,17 @@
 　・押して動かせる岩
 　　└岩の移動方向をレイキャストで判定
 　・スイッチを踏むとフィールドマップに橋がかかる処理
+
+　・gameフォルダにゲームの実行ファイルを入れました。
 　
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ 
 【実行環境】
 
-・バージョン：Godot Engine v3.3.2.stable
+・バージョン：Godot Engine v3.4.2.stable
 ・OS　　　　：Windows 10 64-bit
 ・CPU　 　　：AMD FX-8370E Eight-Core Processor
 ・メモリ　　：16GB
-・GPU　 　　：NVIDIA GeForce GTX 750 Ti 
+・GPU　 　　：AMD Radeon RX 6600
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ 
 【サポート】
 
