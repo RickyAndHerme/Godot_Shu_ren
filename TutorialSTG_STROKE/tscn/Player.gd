@@ -31,7 +31,7 @@ func _process(delta):
 		
 	if Input.is_action_pressed("ui_right"):
 		vec += Vector2.RIGHT
-		if rolltime <= 40:	#rolltimeが40以下ならば、rolltimeを+1する
+		if rolltime <= 50:	#rolltimeが40以下ならば、rolltimeを+1する
 			rolltime += 1
 	elif !Input.is_action_pressed("ui_right") and rolltime >= 29:	#右が押されて、rolltimeが29以上ならば
 		rolltime -= 1		#rolltimeを-1する
