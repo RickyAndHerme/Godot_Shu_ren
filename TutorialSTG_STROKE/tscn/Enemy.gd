@@ -2,8 +2,8 @@ extends Area2D
 
 #Bomb、tekishot1をpreloadする。preloadすると先にリソースを読み込んでおくためパフォーマンスが向上する。
 #これに対するloadはloadがスクリプトで呼ばれたときに読み込みを開始する。
-var bomb = preload("res://tscn/Bomb.tscn")
-var fire = preload("res://tscn/tekishot1.tscn")
+const bomb = preload("res://tscn/Bomb.tscn")
+const fire = preload("res://tscn/tekishot1.tscn")
 
 var vec = Vector2.ZERO				#ベクトルを０で初期化
 var speed = 80						#スピード
