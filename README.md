@@ -10,7 +10,7 @@ Godot Engine修練場で公開している中途半端なサンプルプロジ�
 
 ----------------------------------------------------------
 #### * ブロック崩しゲームのサンプル
-![ブロック崩しゲームのサンプル](https://blog-imgs-147.fc2.com/i/6/z/i6zyr7er68b9/blockbreak.png)
+![ブロック崩しゲームのサンプル](https://blog-imgs-147.fc2.com/i/6/z/i6zyr7er68b9/BlockBreak.gif)
 
 #### * シーン遷移のサンプル  
 ![シーン遷移のサンプル](https://blog-imgs-138.fc2.com/i/6/z/i6zyr7er68b9/SceneMove.gif)  
