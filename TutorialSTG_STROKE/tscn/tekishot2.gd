@@ -2,7 +2,7 @@ extends Area2D
 
 #Bombをpreloadする。preloadすると先にリソースを読み込んでおくためパフォーマンスが向上する。
 #これに対するloadはloadがスクリプトで呼ばれたときに読み込みを開始する。
-var bomb = preload("res://tscn/Bomb.tscn")
+const bomb = preload("res://tscn/Bomb.tscn")
 
 var vec = Vector2.DOWN	#ベクトル。下向きにしている
 var speed = 150			#弾の移動スピード

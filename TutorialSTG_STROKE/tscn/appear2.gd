@@ -3,7 +3,7 @@ extends Area2D
 #appear1.gdとほぼ同じ内容。
 #Enemy2をpreloadする。preloadすると先にリソースを読み込んでおくためパフォーマンスが向上する。
 #これに対するloadはloadがスクリプトで呼ばれたときに読み込みを開始する。
-var enemy2 = preload("res://tscn/Enemy2.tscn")
+const enemy2 = preload("res://tscn/Enemy2.tscn")
 
 #出現音を再生する。_ready()が呼び出されたときに再生するので一回だけ音が鳴らせるようだ。
 func _ready():

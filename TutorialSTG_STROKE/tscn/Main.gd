@@ -2,8 +2,8 @@ extends Node2D
 
 #appear1、2をpreloadする。preloadすると先にリソースを読み込んでおくためパフォーマンスが向上する。
 #これに対するloadはloadがスクリプトで呼ばれたときに読み込みを開始する
-var ups = preload("res://tscn/appear1.tscn")
-var ups2 = preload("res://tscn/appear2.tscn")
+const ups = preload("res://tscn/appear1.tscn")
+const ups2 = preload("res://tscn/appear2.tscn")
 
 var time = 30		#敵出現までの時間
 var dietime = 100	#プレイヤー死亡後の待機時間

@@ -2,11 +2,12 @@ extends Area2D
 
 #Enemyをpreloadする。preloadすると先にリソースを読み込んでおくためパフォーマンスが向上する。
 #これに対するloadはloadがスクリプトで呼ばれたときに読み込みを開始する。
-var enemy = preload("res://tscn/Enemy.tscn")
+const enemy = preload("res://tscn/Enemy.tscn")
 
 #出現音を再生する。_ready()が呼び出されたときに再生するので一回だけ音が鳴らせるようだ。
 func _ready():
-	$"/root/Global/Sound_Appear1".play()
+	#$"root/Global/Sound_Appear1".play()
+	pass
 
 #初期化：出現位置は画面内でランダム	
 func start():

@@ -2,8 +2,8 @@ extends Area2D
 
 #Shot1、Bombをpreloadする。preloadすると先にリソースを読み込んでおくためパフォーマンスが向上する。
 #これに対するloadはloadがスクリプトで呼ばれたときに読み込みを開始する
-var shot = preload("res://tscn/Shot.tscn")
-var bomb = preload("res://tscn/Bomb.tscn")
+const shot = preload("res://tscn/Shot.tscn")
+const bomb = preload("res://tscn/Bomb.tscn")
 
 
 var vec = Vector2.ZERO	#ベクトル
@@ -47,7 +47,7 @@ func _process(delta):
 		get_parent().add_child(s1)
 		get_parent().add_child(s2)
 	
-	position += vec * speed * delta					#ベクトルにspeedとdeltaをかけている
+	position += vec.normalized() * speed * delta					#ベクトルにspeedとdeltaをかけている
 	position.x = clamp(position.x, 0+15, 640-15)	#x方向の移動範囲処理
 	position.y = clamp(position.y, 0+15, 480-15)	#y方向の移動範囲処理
 	
