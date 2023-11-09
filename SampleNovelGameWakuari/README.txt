@@ -41,23 +41,52 @@
 
 【ライセンス】
 
-　このゲームは、次のライセンスの下で利用可能なGodotエンジンを使用しています:
+【Godot Engine】
+This game uses Godot Engine, available under the following license:
 
-　Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) 2014-2020 Godot Engine contributors.
-　Permission is hereby granted, free of charge, to any person obtaining a copy of this software
-　and associated documentation files (the "Software"), to deal in the Software without restriction, 
-　including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
-　and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
-　subject to the following conditions:
+Copyright (c) 2014-present Godot Engine contributors. Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
 
-　上記の著作権表示およびこの許可通知は、ソフトウェアのすべてのコピーまたは大部分に含まれるものとします。
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-　本ソフトウェアは、市場性、特定の目的への適合性、および権利の非侵害の保証を含みますが、
-　明示または黙示を問わず、これらに限定されていないいかなる保証もなしに「現状のまま」提供されます。
-　いかなる場合においても、作者または著作権者は、契約、不法行為、またはその他の行為、
-　本ソフトウェアまたは本ソフトウェアの使用または他の取引に起因もしくは関連するいかなる請求、
-　損害またはその他の責任についても責任を負わないものとします。
+　The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
+　THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+【FreeType】
+Portions of this software are copyright © 2022 The FreeType Project (www.freetype.org). All rights reserved.
+
+【ENet】
+Copyright (c) 2002-2020 Lee Salzman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+【mbed TLS】
+Copyright The Mbed TLS Contributors
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
 　本ソフトでは表示フォントに「M PLUS Rounded 1c」を使用しています。
 　(https://fonts.google.com/specimen/M+PLUS+Rounded+1c) 
 　Licensed under SIL Open Font License 1.1 (http://scripts.sil.org/OFL)
