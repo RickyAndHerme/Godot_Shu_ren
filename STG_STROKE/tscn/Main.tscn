@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=3 uid="uid://be1fv1kllag6n"]
+
+[ext_resource type="Script" path="res://tscn/Main.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://k4e67du43sbl" path="res://media/bg1.png" id="4"]
+[ext_resource type="FontFile" uid="uid://dx33idnrd2h5a" path="res://media/PixelMplus10-Regular.ttf" id="4_ts3lq"]
+[ext_resource type="PackedScene" uid="uid://cfknc0mnawx5t" path="res://tscn/Player.tscn" id="5"]
+
+[sub_resource type="Animation" id="1"]
+resource_name = "scroll"
+length = 32.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 32),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 640, 480), Rect2(0, -960, 640, 480)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kx3t4"]
+_data = {
+"scroll": SubResource("1")
+}
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(320, 240)
+texture = ExtResource("4")
+region_enabled = true
+region_rect = Rect2(0, -3, 640, 480)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bg"]
+libraries = {
+"": SubResource("AnimationLibrary_kx3t4")
+}
+autoplay = "scroll"
+
+[node name="Player" parent="." instance=ExtResource("5")]
+position = Vector2(320, 400)
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 94.0
+offset_bottom = 66.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer"]
+layout_mode = 2
+metadata/_edit_group_ = true
+
+[node name="Hiscore" type="Label" parent="AspectRatioContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_ts3lq")
+theme_override_font_sizes/font_size = 23
+text = "HI-SCORE:"
+
+[node name="Score" type="Label" parent="AspectRatioContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_ts3lq")
+theme_override_font_sizes/font_size = 23
+text = "SCORE:"
