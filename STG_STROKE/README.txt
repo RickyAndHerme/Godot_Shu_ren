@@ -104,6 +104,7 @@ specific language governing permissions and limitations under the License.
 　・Godot4.3.dev4に対応
 　・GlobalGroups機能の使用、いくつかの処理構文を見直し最適化
 　・一部グラフィック変更
+　・BGM修正
 　・難易度調整
 　・ブートスプラッシュ画像を修正
 　・コメントの修正
