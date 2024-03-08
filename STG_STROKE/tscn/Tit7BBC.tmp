@@ -1,0 +1,102 @@
+[gd_scene load_steps=8 format=3 uid="uid://8n87pqnhwao4"]
+
+[ext_resource type="Script" path="res://tscn/Title.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://5dtdph3ol6yw" path="res://media/title.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://k4e67du43sbl" path="res://media/bg1.png" id="4"]
+
+[sub_resource type="Animation" id="1"]
+resource_name = "scroll"
+length = 32.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 32),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 640, 480), Rect2(0, -960, 640, 480)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2n7t7"]
+_data = {
+"scroll": SubResource("1")
+}
+
+[sub_resource type="Animation" id="2"]
+resource_name = "Blinking"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [-1, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_106t5"]
+_data = {
+"Blinking": SubResource("2")
+}
+
+[node name="Title" type="Node2D"]
+script = ExtResource("1")
+
+[node name="bg1" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+texture = ExtResource("4")
+region_enabled = true
+region_rect = Rect2(0, 0, 640, 480)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bg1"]
+autoplay = "scroll"
+libraries = {
+"": SubResource("AnimationLibrary_2n7t7")
+}
+
+[node name="STROKE" type="Sprite2D" parent="."]
+position = Vector2(320, 120)
+texture = ExtResource("2")
+region_rect = Rect2(0, 0, 640, 480)
+
+[node name="PushSpaceKey" type="Label" parent="."]
+text = "Push Space Key
+"
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="PushSpaceKey"]
+autoplay = "Blinking"
+libraries = {
+"": SubResource("AnimationLibrary_106t5")
+}
+
+[node name="hiscore" type="Label" parent="."]
+text = "HI-SCORE:"
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 640.0
+offset_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="AspectRatioContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="Copyright" type="Label" parent="AspectRatioContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Copyright © 2021 Ricky Inc. All Rights Reserved."

@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://ddte7q7i5hkcq"]
+
+[ext_resource type="Script" path="res://tscn/tekishot1.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://25wlfknwkyq4" path="res://media/tekishot1.png" id="2"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 7.07107
+
+[sub_resource type="Animation" id="2"]
+resource_name = "anime"
+length = 0.4
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_trkr2"]
+_data = {
+"anime": SubResource("2")
+}
+
+[node name="tekishot1" type="Area2D" groups=["enemyshot"]]
+texture_filter = 1
+collision_layer = 8
+script = ExtResource("1")
+metadata/_edit_group_ = true
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2")
+hframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_trkr2")
+}
+autoplay = "anime"
