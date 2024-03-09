@@ -162,7 +162,7 @@ AspectRatioContainerを親ノードにしている。これを設置するとRat
 
 ◆Transition.tscn
 「await get_tree().create_timer(1.0).timeout」で1秒待機している。
-最後の「.play.bind("RESET"))」でTransitionノードのプロセスモードをDisabledにすることで終了している。
+最後の「.play("RESET"))」でTransitionノードのプロセスモードをDisabledにすることで終了している。
 このサンプルではprocess_modeやvisibleプロパティをAnimationPlayerで管理することでスクリプトの量を減らしている。
 
 ◆Main.tscn
