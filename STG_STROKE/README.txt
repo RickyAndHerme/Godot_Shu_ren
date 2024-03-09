@@ -161,12 +161,7 @@ AspectRatioContainerを親ノードにしている。これを設置するとRat
 そういったときにUIを配置しているControlノード類のレイアウトをある程度維持したままRatio値で調整できるようになっている。
 
 ◆Transition.tscn
-フェードイン/アウトでシーンの切り替えを行う機能を搭載するにあたりTweenクラスを利用している。
-4.xからTweenにノードは必要なくスクリプトのみで実装できるようになった。
-使い方やbind()についての解説は「Transition.gd」を見ていただくとして、待機を実現する方法として、
-「await get_tree().create_timer(1.0).timeout」という記述を使っている。
-これは直前の「.play_backwards.bind("fade"))」を実行した後、1秒間シーンを待機させることで、
-フェードイン中に他の操作を受け付けないようにしている。
+「await get_tree().create_timer(1.0).timeout」で1秒待機している。
 最後の「.play.bind("RESET"))」でTransitionノードのプロセスモードをDisabledにすることで終了している。
 このサンプルではprocess_modeやvisibleプロパティをAnimationPlayerで管理することでスクリプトの量を減らしている。
 
