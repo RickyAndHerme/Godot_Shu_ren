@@ -39,7 +39,7 @@ func _process(delta: float) -> void:
 	if Global.life == 0:
 		dietime -= 1
 		if dietime < 0:
-			Transition.fade("res://tscn/GameOver.tscn")
+			get_tree().change_scene_to_file("res://tscn/GameOver.tscn")
 
 #敵出現
 func enemyborn(ene: PackedScene):
