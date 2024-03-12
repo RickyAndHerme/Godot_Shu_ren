@@ -110,6 +110,7 @@ specific language governing permissions and limitations under the License.
 　・コメントの修正
 　・解説の追加
 　・著作権表記の修正
+　・ファイル名などの命名規則を統一
 
 ------------------------------------------------------------------ 
 【解説】
