@@ -10,7 +10,7 @@ func start(pos):
 
 #プロセス：アニメーションを再生。
 func _process(delta: float) -> void:
-	$AnimationPlayer.play("Bomb")
+	$AnimationPlayer.play(&"Bomb")
 
 #アニメーション終了判定のシグナルを接続したらqueue_freeでBomb削除
 func _on_AnimationPlayer_animation_finished(anim_name):
