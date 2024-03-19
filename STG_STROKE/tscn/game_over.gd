@@ -1,7 +1,7 @@
 extends Node2D
 
 #ハイスコアの表示のみ
-func _process(delta):
+func _process(delta: float) -> void:
 	$hiscore.text = "HI-SCORE:" + str(Global.hiscore)
 
 #タイマーが終了した際のシグナル接続
