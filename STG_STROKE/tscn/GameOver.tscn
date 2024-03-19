@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://cshfhcca7w8ap"]
 
-[ext_resource type="Script" path="res://tscn/GameOver.gd" id="1"]
+[ext_resource type="Script" path="res://tscn/game_over.gd" id="1_u6t05"]
 [ext_resource type="FontFile" uid="uid://dx33idnrd2h5a" path="res://media/PixelMplus10-Regular.ttf" id="2_8wd24"]
 
 [node name="GameOver" type="Node2D"]
 texture_filter = 1
-script = ExtResource("1")
+script = ExtResource("1_u6t05")
 
 [node name="GameOver" type="Label" parent="."]
 texture_filter = 1
