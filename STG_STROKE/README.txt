@@ -28,9 +28,9 @@
 ------------------------------------------------------------------ 
 【実行環境】
 
-・バージョン：Godot Engine v3.4.2.stable
+・バージョン：Godot4.3.dev5
 ・OS　　　　：Windows 10 64-bit
-・CPU　 　　：AMD FX-8370E Eight-Core Processor
+・CPU　 　　：AMD Ryzen 5 5600X 6-Core Processor
 ・メモリ　　：16GB
 ・GPU　 　　：AMD Radeon RX 6600
 ------------------------------------------------------------------ 
