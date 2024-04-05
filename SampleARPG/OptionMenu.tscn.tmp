@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://window.png" type="Texture" id=2]
+[ext_resource path="res://PixelMplus10-Regular.ttf" type="DynamicFontData" id=7]
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 16.0
+margin_right = 16.0
+margin_top = 16.0
+margin_bottom = 16.0
+
+[sub_resource type="Theme" id=3]
+PanelContainer/styles/panel = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 10
+font_data = ExtResource( 7 )
+
+[node name="OptionMenu" type="CanvasLayer"]
+layer = 2
+
+[node name="ViewportContainer" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StatusWindow" type="PanelContainer" parent="ViewportContainer"]
+margin_left = 192.0
+margin_top = 128.0
+margin_right = 448.0
+margin_bottom = 208.0
+theme = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer2" type="HBoxContainer" parent="ViewportContainer/StatusWindow"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 240.0
+margin_bottom = 64.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ViewportContainer/StatusWindow/GridContainer2"]
+margin_right = 70.0
+margin_bottom = 48.0
+
+[node name="level" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+margin_right = 70.0
+margin_bottom = 11.0
+custom_fonts/font = SubResource( 6 )
+text = "セーブする"
+
+[node name="kaizoudobox" type="HBoxContainer" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+margin_top = 15.0
+margin_right = 70.0
+margin_bottom = 26.0
+
+[node name="kaizoudo" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer/kaizoudobox"]
+margin_right = 50.0
+margin_bottom = 11.0
+custom_fonts/font = SubResource( 6 )
+text = "画面解像度"
+
+[node name="titleback" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+margin_top = 30.0
+margin_right = 70.0
+margin_bottom = 41.0
+custom_fonts/font = SubResource( 6 )
+text = "タイトルに戻る"
