@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://l8u8mceibqt5"]
+
+[ext_resource type="Texture2D" uid="uid://vybbqt8uy0tn" path="res://media/object.png" id="1"]
+[ext_resource type="Script" path="res://tscn/iwa.gd" id="2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rmird"]
+size = Vector2(32, 32)
+
+[node name="Iwa" type="CharacterBody2D" groups=["ok_push"]]
+collision_layer = 16
+collision_mask = 63
+script = ExtResource("2")
+metadata/_edit_group_ = true
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1")
+hframes = 8
+vframes = 8
+frame = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_rmird")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+unique_name_in_owner = true
+collision_mask = 63

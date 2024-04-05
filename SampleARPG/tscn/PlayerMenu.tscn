@@ -1,0 +1,298 @@
+[gd_scene load_steps=20 format=3 uid="uid://c58ywsuhm1l0x"]
+
+[ext_resource type="Texture2D" uid="uid://bkgy5yqr64rrv" path="res://media/window.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dctw2q7cydng1" path="res://media/item.png" id="3_2oq8u"]
+[ext_resource type="FontFile" uid="uid://drmanxuk0bi81" path="res://media/PixelMplus10-Regular.ttf" id="7_n4o20"]
+[ext_resource type="Script" path="res://tscn/player_menu.gd" id="8"]
+
+[sub_resource type="StyleBoxTexture" id="2"]
+texture = ExtResource("2")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="Theme" id="3"]
+PanelContainer/styles/panel = SubResource("2")
+
+[sub_resource type="StyleBoxTexture" id="4"]
+texture = ExtResource("2")
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="Theme" id="5"]
+/styles/11110 = SubResource("4")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wuoo4"]
+content_margin_left = 4.0
+content_margin_bottom = 7.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a2acm"]
+load_path = "res://.godot/imported/item.png-2eccc64b1c7e2d0f749a3cb03824ca22.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nfql"]
+atlas = SubResource("CompressedTexture2D_a2acm")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xmw0"]
+atlas = SubResource("CompressedTexture2D_a2acm")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7pb6"]
+atlas = SubResource("CompressedTexture2D_a2acm")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3k0b3"]
+atlas = SubResource("CompressedTexture2D_a2acm")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1u7jm"]
+atlas = SubResource("CompressedTexture2D_a2acm")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2wr1"]
+atlas = SubResource("CompressedTexture2D_a2acm")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfawy"]
+atlas = SubResource("CompressedTexture2D_a2acm")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5de4"]
+atlas = ExtResource("3_2oq8u")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gufy"]
+atlas = ExtResource("3_2oq8u")
+region = Rect2(32, 0, 32, 32)
+
+[node name="PlayerMenu" type="CanvasLayer"]
+visible = false
+script = ExtResource("8")
+
+[node name="ViewportContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemWindow" type="PanelContainer" parent="ViewportContainer"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 44.0
+offset_top = 32.0
+offset_right = 236.0
+offset_bottom = 280.0
+theme = SubResource("3")
+metadata/_edit_group_ = true
+
+[node name="GridContainer" type="GridContainer" parent="ViewportContainer/ItemWindow"]
+layout_mode = 2
+theme = SubResource("5")
+columns = 5
+
+[node name="TextureRect" type="Button" parent="ViewportContainer/ItemWindow/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_8nfql")
+flat = true
+
+[node name="TextureRect2" type="Button" parent="ViewportContainer/ItemWindow/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_8xmw0")
+
+[node name="TextureRect3" type="Button" parent="ViewportContainer/ItemWindow/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_j7pb6")
+
+[node name="TextureRect4" type="Button" parent="ViewportContainer/ItemWindow/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_3k0b3")
+
+[node name="TextureRect5" type="Button" parent="ViewportContainer/ItemWindow/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_1u7jm")
+
+[node name="TextureRect6" type="Button" parent="ViewportContainer/ItemWindow/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_l2wr1")
+
+[node name="TextureRect7" type="Button" parent="ViewportContainer/ItemWindow/GridContainer"]
+auto_translate_mode = 1
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_lfawy")
+
+[node name="StatusWindow" type="PanelContainer" parent="ViewportContainer"]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 32.0
+offset_right = 604.0
+offset_bottom = 287.0
+theme = SubResource("3")
+metadata/_edit_group_ = true
+
+[node name="GridContainer2" type="HBoxContainer" parent="ViewportContainer/StatusWindow"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ViewportContainer/StatusWindow/GridContainer2"]
+layout_mode = 2
+
+[node name="TextureRect6" type="Button" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_o5de4")
+flat = true
+
+[node name="Asoubi" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "装備 A"
+
+[node name="Level" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "レベル"
+
+[node name="Life" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "体力"
+
+[node name="Magic" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "魔法"
+
+[node name="Power" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "力"
+
+[node name="Defence" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "守り"
+
+[node name="Fortune" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "幸運"
+
+[node name="Exp" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "経験値"
+
+[node name="Gold" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "ゴールド"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ViewportContainer/StatusWindow/GridContainer2"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="TextureRect6" type="Button" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+texture_filter = 1
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wuoo4")
+icon = SubResource("AtlasTexture_8gufy")
+flat = true
+
+[node name="Bsoubi" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "装備 B"
+
+[node name="Lv" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "1"
+
+[node name="Hp" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "3"
+
+[node name="Mp" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "1"
+
+[node name="Pow" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "2"
+
+[node name="Def" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "2"
+
+[node name="For" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "3"
+
+[node name="Exp" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "0"
+
+[node name="Gol" type="Label" parent="ViewportContainer/StatusWindow/GridContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_n4o20")
+text = "100"

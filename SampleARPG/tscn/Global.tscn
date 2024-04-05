@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://bfv4rjugb0llf"]
+
+[ext_resource type="Script" path="res://tscn/global.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cxlpqnips038m" path="res://tscn/OptionMenu.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://c58ywsuhm1l0x" path="res://tscn/PlayerMenu.tscn" id="3_r44id"]
+[ext_resource type="FontFile" uid="uid://drmanxuk0bi81" path="res://media/PixelMplus10-Regular.ttf" id="4_b7gur"]
+[ext_resource type="Script" path="res://tscn/player_state.gd" id="4_sjuu8"]
+[ext_resource type="Texture2D" uid="uid://duqlr6wsnsxcy" path="res://media/life.png" id="5_nce0g"]
+[ext_resource type="AudioStream" uid="uid://c4brifmssm6u8" path="res://media/switch.wav" id="6_jtd55"]
+[ext_resource type="AudioStream" uid="uid://ddf12wce7gdvx" path="res://media/attack.wav" id="7_higxw"]
+[ext_resource type="AudioStream" uid="uid://cc1w4aeuwetvv" path="res://media/damage.wav" id="9_ekh5m"]
+
+[node name="Global" type="Node2D"]
+process_mode = 3
+script = ExtResource("1")
+
+[node name="OptionMenu" parent="." instance=ExtResource("2")]
+
+[node name="PlayerMenu" parent="." instance=ExtResource("3_r44id")]
+
+[node name="PlayerState" type="CanvasLayer" parent="."]
+visible = false
+script = ExtResource("4_sjuu8")
+
+[node name="Life" type="HBoxContainer" parent="PlayerState"]
+auto_translate_mode = 1
+offset_right = 92.0
+offset_bottom = 19.0
+
+[node name="Label" type="Label" parent="PlayerState/Life"]
+auto_translate_mode = 1
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_b7gur")
+theme_override_font_sizes/font_size = 16
+text = "体力"
+
+[node name="Life1" type="TextureRect" parent="PlayerState/Life/Label" groups=["mylife"]]
+unique_name_in_owner = true
+auto_translate_mode = 1
+texture_filter = 1
+layout_mode = 2
+offset_left = 36.0
+offset_right = 52.0
+offset_bottom = 19.0
+texture = ExtResource("5_nce0g")
+stretch_mode = 2
+
+[node name="Life2" type="TextureRect" parent="PlayerState/Life/Label" groups=["mylife"]]
+unique_name_in_owner = true
+auto_translate_mode = 1
+texture_filter = 1
+layout_mode = 2
+offset_left = 56.0
+offset_right = 72.0
+offset_bottom = 19.0
+texture = ExtResource("5_nce0g")
+stretch_mode = 2
+
+[node name="Life3" type="TextureRect" parent="PlayerState/Life/Label" groups=["mylife"]]
+unique_name_in_owner = true
+auto_translate_mode = 1
+texture_filter = 1
+layout_mode = 2
+offset_left = 76.0
+offset_right = 92.0
+offset_bottom = 19.0
+texture = ExtResource("5_nce0g")
+stretch_mode = 2
+
+[node name="Switch_SE" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_jtd55")
+
+[node name="Damage_SE" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ekh5m")
+
+[node name="Attack_SE" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_higxw")
