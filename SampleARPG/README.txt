@@ -118,7 +118,7 @@ specific language governing permissions and limitations under the License.
 
 画像やフォントはインスペクタのCanvasItem > Texture > Filterに「Nearest」を設定し画像がくっきりするようにしている。
 
-4.3から搭載されたGlobalGroupsでキャラクターを全面管理するように変更。
+4.3から搭載されたGlobalGroupsで一部キャラクターを管理するように変更。
 従来のグループはSceneGroupsという名称になっているがGlobalGroupsもSceneGroupsも使い方はほとんど変わらないようだ。
 違いはGlobalGroupsはproject.godotにグループ名が記録されることでシーン単位ではなくゲーム全体で名前が保持される点にある。
 それによりシーン毎にグループ名設定をする必要はなくなり管理しやすくなった。
