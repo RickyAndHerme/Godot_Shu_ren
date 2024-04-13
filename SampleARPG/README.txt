@@ -165,7 +165,7 @@ if event.is_action_pressed(&"escape") and !$"/root/Global/PlayerMenu".visible an
 $/root.mode = Window.MODE_FULLSCREEN　という箇所があるが、rootノードにはWindowノード、ViewPortノードも含まれている。
 Windowノードはウィンドウ/フルスクリーンの切り替えの他、解像度などの変更ができる。
 ViewPortノードはアンチエイリアシング関係のプロパティなどが調整できる。
-プロジェクトを実行中に、シーンツリーに「リモート」という項目が表示される。リモートに切り替えるとrootノードが確認できる。
+プロジェクトを実行中に、シーンツリーに「リモート」という項目が表示されるが、リモートに切り替えるとrootノードが確認できる。
 
 ◆PlayerMenu.tscn
 Tabキーで開く。プレイヤーメニューはアイテムアイコンにbuttonノードを使用している(現在は形だけで何も起きない)
@@ -181,7 +181,7 @@ Tabキーで開く。プレイヤーメニューはアイテムアイコンにbu
 ◆Transition.tscn
 tweenを使用してモザイク、フェードを処理している。
 process_mode、visible、shader_parameterなどはAnimationPlayerで管理している。
-スクリプトも参照されれたし。
+スクリプトも参照されたし。
 
 ◆FieldArea.tscn
 TileMapノードではレイヤー、アニメーション、コリジョン、コリジョンレイヤーなどを設定している。
