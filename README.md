@@ -16,7 +16,7 @@ Godot Engine修練場で公開している中途半端なサンプルプロジ�
 #### * アクションRPGのサンプル
 ![アクションRPGのサンプル](https://blog-imgs-171.fc2.com/i/6/z/i6zyr7er68b9/ARPG_thumb.gif)
 #### * ノベルゲームのサンプル
-![ノベルゲームのサンプル]([https://blog-imgs-171.fc2.com/i/6/z/i6zyr7er68b9/ARPG_thumb.gif])
+![ノベルゲームのサンプル](https://blog-imgs-171.fc2.com/i/6/z/i6zyr7er68b9/sample_novel.gif)
 
 
 
