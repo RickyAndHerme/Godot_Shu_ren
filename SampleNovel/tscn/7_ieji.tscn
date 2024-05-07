@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk3emjv3upwgb"]
+
+[ext_resource type="Texture2D" uid="uid://cd02h5csx7lp3" path="res://media/kamikire.png" id="1"]
+[ext_resource type="Script" path="res://tscn/7_ieji.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://bn0l0l8cl8nuq" path="res://media/ouchi.png" id="4"]
+
+[node name="7_ieji" type="Node2D" groups=["text_02"]]
+script = ExtResource("2")
+
+[node name="pic" type="Node2D" parent="."]
+modulate = Color(0.65098, 0.65098, 0.65098, 1)
+
+[node name="ouchi" type="Sprite2D" parent="pic"]
+unique_name_in_owner = true
+position = Vector2(640, 360)
+texture = ExtResource("4")
+
+[node name="kamikire" type="Sprite2D" parent="pic"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(640, 360)
+texture = ExtResource("1")

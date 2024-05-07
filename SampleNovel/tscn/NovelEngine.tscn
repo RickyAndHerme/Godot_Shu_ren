@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bixkjxwrxrk5w"]
+
+[ext_resource type="Script" path="res://tscn/novel_engine.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://dnj2wp7qmlr87" path="res://media/MPLUSRounded1c-Regular.ttf" id="2_jxj6u"]
+
+[node name="NovelEngine" type="RichTextLabel" groups=["nve"]]
+offset_left = 128.0
+offset_top = 72.0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_fonts/normal_font = ExtResource("2_jxj6u")
+theme_override_font_sizes/normal_font_size = 26
+bbcode_enabled = true
+scroll_active = false
+script = ExtResource("1")
+metadata/_edit_lock_ = true

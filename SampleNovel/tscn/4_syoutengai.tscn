@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckmku3g27vjx5"]
+
+[ext_resource type="Script" path="res://tscn/4_syoutengai.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cv4ky04wnpvds" path="res://media/syoutengai.png" id="4"]
+
+[node name="4_syoutengai" type="Node2D" groups=["text_02"]]
+script = ExtResource("1")
+
+[node name="pic" type="Node2D" parent="."]
+modulate = Color(0.65098, 0.65098, 0.65098, 1)
+
+[node name="syoutengai" type="Sprite2D" parent="pic"]
+unique_name_in_owner = true
+position = Vector2(640, 360)
+texture = ExtResource("4")

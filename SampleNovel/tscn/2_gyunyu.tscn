@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6kttfq0b8ecr"]
+
+[ext_resource type="Texture2D" uid="uid://dgtsh7hbfrgbq" path="res://media/gyunyu.png" id="1"]
+[ext_resource type="Script" path="res://tscn/2_gyunyu.gd" id="3"]
+
+[node name="2_gyunyu" type="Node2D" groups=["text_01"]]
+script = ExtResource("3")
+
+[node name="gyunyu" type="Sprite2D" parent="."]
+modulate = Color(0.65098, 0.65098, 0.65098, 1)
+position = Vector2(640, 360)
+texture = ExtResource("1")

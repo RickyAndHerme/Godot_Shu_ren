@@ -1,0 +1,602 @@
+[gd_scene load_steps=12 format=3 uid="uid://bjayhs3w5c1l2"]
+
+[ext_resource type="Script" path="res://tscn/game_menu.gd" id="2"]
+[ext_resource type="FontFile" uid="uid://dnj2wp7qmlr87" path="res://media/MPLUSRounded1c-Regular.ttf" id="2_5kpkx"]
+
+[sub_resource type="FontFile" id="FontFile_12ksy"]
+fallbacks = Array[Font]([ExtResource("2_5kpkx")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/1/0/ascent = 0.0
+cache/0/1/0/descent = 0.0
+cache/0/1/0/underline_position = 0.0
+cache/0/1/0/underline_thickness = 0.0
+cache/0/1/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+
+[sub_resource type="Theme" id="2"]
+default_font = SubResource("FontFile_12ksy")
+default_font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g2x2m"]
+bg_color = Color(0, 0, 0, 0.862745)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rgb32"]
+bg_color = Color(0, 0, 0, 0.682353)
+
+[sub_resource type="Theme" id="1"]
+default_font = SubResource("FontFile_12ksy")
+
+[sub_resource type="Theme" id="Theme_a6kxt"]
+default_font = ExtResource("2_5kpkx")
+default_font_size = 23
+
+[sub_resource type="FontFile" id="FontFile_uy5bh"]
+fallbacks = Array[Font]([ExtResource("2_5kpkx")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/1/0/ascent = 0.0
+cache/0/1/0/descent = 0.0
+cache/0/1/0/underline_position = 0.0
+cache/0/1/0/underline_thickness = 0.0
+cache/0/1/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+
+[sub_resource type="Theme" id="4"]
+default_font = SubResource("FontFile_uy5bh")
+default_font_size = 23
+
+[sub_resource type="Theme" id="3"]
+default_font = SubResource("FontFile_uy5bh")
+default_font_size = 30
+
+[node name="GameMenu" type="CanvasLayer" groups=["game_menu"]]
+layer = 2
+visible = false
+script = ExtResource("2")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -462.0
+offset_top = -283.5
+offset_right = 462.0
+offset_bottom = 283.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("2")
+theme_override_styles/tabbar_background = SubResource("StyleBoxFlat_g2x2m")
+theme_override_styles/panel = SubResource("StyleBoxFlat_rgb32")
+current_tab = 0
+tab_focus_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="バックログ" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+focus_mode = 0
+theme = SubResource("1")
+metadata/_edit_lock_ = true
+metadata/_tab_index = 0
+
+[node name="BackLog" type="RichTextLabel" parent="TabContainer/バックログ" groups=["backlog"]]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -416.0
+offset_top = 49.0
+offset_right = 416.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_a6kxt")
+
+[node name="ゲームデータ" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+focus_mode = 0
+metadata/_edit_lock_ = true
+metadata/_tab_index = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="TabContainer/ゲームデータ"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 46.0
+offset_top = 46.0
+offset_right = -54.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer1" type="HBoxContainer" parent="TabContainer/ゲームデータ/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Save1SS" type="TextureRect" parent="TabContainer/ゲームデータ/VBoxContainer2/HBoxContainer1"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(160, 90)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+expand_mode = 1
+
+[node name="SaveTime1" type="Label" parent="TabContainer/ゲームデータ/VBoxContainer2/HBoxContainer1"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = SubResource("4")
+
+[node name="VBoxContainer" type="HBoxContainer" parent="TabContainer/ゲームデータ/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Save1Button" type="Button" parent="TabContainer/ゲームデータ/VBoxContainer2/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme = SubResource("3")
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "セーブ"
+
+[node name="Load1Button" type="Button" parent="TabContainer/ゲームデータ/VBoxContainer2/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme = SubResource("3")
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "ロード"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/ゲームデータ/VBoxContainer2"]
+auto_translate_mode = 1
+layout_mode = 2
+
+[node name="Save2SS" type="TextureRect" parent="TabContainer/ゲームデータ/VBoxContainer2/HBoxContainer2"]
+unique_name_in_owner = true
+auto_translate_mode = 1
+texture_filter = 1
+custom_minimum_size = Vector2(160, 90)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+expand_mode = 1
+
+[node name="SaveTime2" type="Label" parent="TabContainer/ゲームデータ/VBoxContainer2/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = SubResource("4")
+
+[node name="VBoxContainer2" type="HBoxContainer" parent="TabContainer/ゲームデータ/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Save2Button" type="Button" parent="TabContainer/ゲームデータ/VBoxContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme = SubResource("3")
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "セーブ"
+
+[node name="Load2Button" type="Button" parent="TabContainer/ゲームデータ/VBoxContainer2/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme = SubResource("3")
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "ロード"
+
+[node name="設定" type="TabBar" parent="TabContainer"]
+visible = false
+custom_minimum_size = Vector2(705, 0)
+layout_mode = 2
+focus_mode = 0
+metadata/_edit_lock_ = true
+metadata/_tab_index = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/設定"]
+layout_mode = 2
+offset_left = 54.0
+offset_top = 47.0
+offset_right = 878.0
+offset_bottom = 495.0
+metadata/_edit_group_ = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/設定/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="textspeed" type="Label" parent="TabContainer/設定/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+mouse_filter = 1
+text = "テキストの速度"
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/設定/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="HSlider" type="HSlider" parent="TabContainer/設定/VBoxContainer/HBoxContainer2" groups=["slider"]]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+focus_mode = 0
+min_value = 1.0
+max_value = 10.0
+step = 2.0
+value = 3.0
+rounded = true
+ticks_on_borders = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/設定/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Resolutions" type="Label" parent="TabContainer/設定/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "画面のサイズ"
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/設定/VBoxContainer/HBoxContainer"]
+auto_translate_mode = 1
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="1280_720" type="Button" parent="TabContainer/設定/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "1280*720"
+
+[node name="1600_900" type="Button" parent="TabContainer/設定/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "1600*900"
+
+[node name="1920_1080" type="Button" parent="TabContainer/設定/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "1920*1080"
+
+[node name="FullScreen" type="Button" parent="TabContainer/設定/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "FullScreen"
+
+[node name="TitleButton" type="Button" parent="TabContainer/設定/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+text = "タイトルに戻る"
+
+[connection signal="pressed" from="TabContainer/設定/VBoxContainer/HBoxContainer/1280_720" to="." method="_on_1280_720_pressed"]
+[connection signal="pressed" from="TabContainer/設定/VBoxContainer/HBoxContainer/1600_900" to="." method="_on_1600_900_pressed"]
+[connection signal="pressed" from="TabContainer/設定/VBoxContainer/HBoxContainer/1920_1080" to="." method="_on_1920_1080_pressed"]
+[connection signal="pressed" from="TabContainer/設定/VBoxContainer/HBoxContainer/FullScreen" to="." method="_on_FullScreen_pressed"]
+[connection signal="pressed" from="TabContainer/設定/VBoxContainer/TitleButton" to="." method="_on_QuitButton_pressed"]

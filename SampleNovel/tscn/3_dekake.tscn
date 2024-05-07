@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://b54k4tiawvfr8"]
+
+[ext_resource type="Script" path="res://tscn/3_dekake.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cupqbjsipl3wu" path="res://media/yamamichi.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dybrvs7u00nlr" path="res://media/usagi1.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c56jb27prx5u5" path="res://media/tanuki1.png" id="6"]
+[ext_resource type="Theme" uid="uid://cd336fggfurxc" path="res://media/sentakushi.tres" id="6_ewl8i"]
+
+[node name="3_dekake" type="Node2D" groups=["text_02"]]
+script = ExtResource("1")
+
+[node name="pic" type="Node2D" parent="."]
+modulate = Color(0.71, 0.71, 0.71, 1)
+
+[node name="yamamichi" type="Sprite2D" parent="pic"]
+unique_name_in_owner = true
+position = Vector2(640, 360)
+texture = ExtResource("4")
+
+[node name="usagi1" type="Sprite2D" parent="pic"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(751.881, 363.922)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5")
+
+[node name="tanuki1" type="Sprite2D" parent="pic"]
+unique_name_in_owner = true
+position = Vector2(535, 579)
+texture = ExtResource("6")
+
+[node name="そして……" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 553.0
+offset_bottom = 228.0
+metadata/_edit_group_ = true
+
+[node name="1茂みにかくれました。" type="Button" parent="そして……"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+theme = ExtResource("6_ewl8i")
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+button_mask = 3
+shortcut_in_tooltip = false
+text = "1.茂みにかくれました。"
+flat = true
+alignment = 0
+
+[node name="2足が震えて動けませんでした。" type="Button" parent="そして……"]
+unique_name_in_owner = true
+auto_translate_mode = 1
+layout_mode = 2
+focus_mode = 0
+theme = ExtResource("6_ewl8i")
+theme_override_colors/font_outline_color = Color(0.21875, 0.21875, 0.21875, 1)
+theme_override_colors/font_hover_color = Color(1, 0.960938, 0, 1)
+theme_override_constants/outline_size = 10
+button_mask = 3
+shortcut_in_tooltip = false
+text = "2足が震えて動けませんでした。"
+flat = true
+alignment = 0

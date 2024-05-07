@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtgy2xxaogw7m"]
+
+[ext_resource type="Texture2D" uid="uid://dvuwj4k1hj5gv" path="res://media/gameclear.png" id="1"]
+[ext_resource type="Script" path="res://tscn/game_over.gd" id="2"]
+
+[node name="GameClear" type="CanvasLayer"]
+script = ExtResource("2")
+
+[node name="oshimai" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1")

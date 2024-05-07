@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsolcc2gywtlq"]
+
+[ext_resource type="Texture2D" uid="uid://bn0l0l8cl8nuq" path="res://media/ouchi.png" id="1"]
+[ext_resource type="Script" path="res://tscn/1_ietokawa.gd" id="3"]
+
+[node name="1_ietokawa" type="Node2D" groups=["text_01"]]
+script = ExtResource("3")
+
+[node name="ouchi" type="Sprite2D" parent="."]
+modulate = Color(0.65098, 0.65098, 0.65098, 1)
+position = Vector2(640, 360)
+texture = ExtResource("1")
