@@ -206,7 +206,7 @@ GameMenuノードのエリア内で右クリックしてもメニューが開か
 セーブ/ロードの処理は解説すると難しくなるのでgame_menu.gdも参照されたし。
 セーブの流れとしては、
 「FileAccess.open_encrypted_with_pass」を使ってユーザーフォルダ(user://～)に、
-任意の名前のセーブデータを指定、書き込みモードを指定、暗号化するためのキーをStringで渡している。
+任意の名前のセーブデータを指定、書き込みモードを指定、暗号化するためのキーをStringで渡す。
 また暗号化のキーに「OS.get_unique_id()」を渡してデバイスIDをパスワードにすることもできるようだ。
 ↓
 if file.file_exists("user://savegame" + str(num) + ".data"):
@@ -226,7 +226,7 @@ file.store_var(Global.save)
 
 ロードの流れはセーブと少し似ているが、
 「FileAccess.open_encrypted_with_pass」を使用し、
-任意の名前のセーブデータを指定、読み込みモードを指定、暗号化するためのキーをStringで渡している。
+任意の名前のセーブデータを指定、読み込みモードを指定、暗号化するためのキーをStringで渡す。
 ↓
 if file != null && file.file_exists("user://savegame" + str(num) + ".data"):
 上記の箇所では「file != null」が追加されている。これがないとセーブデータがない状態でロードするとエラーが発生する。
