@@ -18,7 +18,7 @@
 ------------------------------------------------------------------ 
 【実行環境】
 
-・バージョン：Godot Engine v4.2.beta4
+・バージョン：Godot4.3.beta3
 ・OS　　　　：Windows 11 64-bit
 ・CPU　 　　：AMD Ryzen 5 5600X 6-Core Processor
 ・メモリ　　：16GB
