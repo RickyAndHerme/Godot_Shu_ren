@@ -12,4 +12,3 @@ func _on_body_entered(body):
 		$"/root/Global/Switch_SE".play()
 		%Sprite.frame = 3
 		emit_signal(&"hashi_kakeru")
-

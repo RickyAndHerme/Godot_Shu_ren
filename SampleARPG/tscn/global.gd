@@ -14,5 +14,3 @@ var player_state = {
 
 var player_pos := Vector2.ZERO	#プレイヤーの遷移先座標を一時的に記憶する変数
  
-
-

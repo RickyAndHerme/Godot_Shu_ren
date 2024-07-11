@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2jfqc60md7kj"]
+
+[ext_resource type="Texture2D" uid="uid://k4bk3o7u5thh" path="res://media/daialog.png" id="2"]
+[ext_resource type="Script" path="res://tscn/text_window.gd" id="3"]
+
+[sub_resource type="Animation" id="1"]
+resource_name = "btn"
+length = 0.24
+loop_mode = 1
+step = 0.04
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kyrp0"]
+_data = {
+"btn": SubResource("1")
+}
+
+[node name="TextWindow" type="Node2D"]
+script = ExtResource("3")
+
+[node name="daialog" type="Sprite2D" parent="."]
+position = Vector2(640, 574)
+texture = ExtResource("2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kyrp0")
+}
+autoplay = "btn"
+
+[node name="Text" type="RichTextLabel" parent="."]

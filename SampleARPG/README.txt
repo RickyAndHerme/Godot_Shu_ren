@@ -109,6 +109,9 @@ specific language governing permissions and limitations under the License.
 　・ウィンドウ/フルスクリーンの切り替え
 　・スクリプトの最適化
 
+2024/07/11 Ver1.2
+　・Godot4.3.beta3に対応
+
 ------------------------------------------------------------------ 
 【解説】
 ------------------------------------------------------------------ 
@@ -118,7 +121,7 @@ specific language governing permissions and limitations under the License.
 
 画像やフォントはインスペクタのCanvasItem > Texture > Filterに「Nearest」を設定し画像がくっきりするようにしている。
 
-4.3から搭載されたGlobalGroupsで一部キャラクターを管理するように変更。
+4.3から搭載されたGlobalGroupsでキャラクターを全面管理するように変更。
 従来のグループはSceneGroupsという名称になっているがGlobalGroupsもSceneGroupsも使い方はほとんど変わらないようだ。
 違いはGlobalGroupsはproject.godotにグループ名が記録されることでシーン単位ではなくゲーム全体で名前が保持される点にある。
 それによりシーン毎にグループ名設定をする必要はなくなり管理しやすくなった。
@@ -165,7 +168,7 @@ if event.is_action_pressed(&"escape") and !$"/root/Global/PlayerMenu".visible an
 $/root.mode = Window.MODE_FULLSCREEN　という箇所があるが、rootノードにはWindowノード、ViewPortノードも含まれている。
 Windowノードはウィンドウ/フルスクリーンの切り替えの他、解像度などの変更ができる。
 ViewPortノードはアンチエイリアシング関係のプロパティなどが調整できる。
-プロジェクトを実行中に、シーンツリーに「リモート」という項目が表示されるが、リモートに切り替えるとrootノードが確認できる。
+プロジェクトを実行中に、シーンツリーに「リモート」という項目が表示される。リモートに切り替えるとrootノードが確認できる。
 
 ◆PlayerMenu.tscn
 Tabキーで開く。プレイヤーメニューはアイテムアイコンにbuttonノードを使用している(現在は形だけで何も起きない)
@@ -181,7 +184,7 @@ Tabキーで開く。プレイヤーメニューはアイテムアイコンにbu
 ◆Transition.tscn
 tweenを使用してモザイク、フェードを処理している。
 process_mode、visible、shader_parameterなどはAnimationPlayerで管理している。
-スクリプトも参照されたし。
+スクリプトも参照されれたし。
 
 ◆FieldArea.tscn
 TileMapノードではレイヤー、アニメーション、コリジョン、コリジョンレイヤーなどを設定している。
@@ -191,12 +194,12 @@ TileSetからはコリジョンレイヤーを設定した。キャラクター�
 
 海アニメーションをコリジョンありとなしの2つを用意した。
 橋を掛けるイベントでocean_collisionに橋を掛けると、コリジョンが邪魔してそのままではプレイヤーは渡れない。
-そこで橋を掛けるときに海のタイルをocean_no_collisionに変更してその上に橋を掛けて渡れるようにした(field_area.gdを参照)
+そこで橋を掛けるときに海のマップチップをocean_no_collisionに変更してその上に橋を掛けて渡れるようにした(field_area.gdを参照)
 
 海アニメーションタイルの作り方。
 1.画面下のタイルマップエディタのTileSetパネルを開く。
 2.アニメーションさせたい画像をアトラスで追加し「アトラスにタイルを自動的に作成しますか」で「いいえ」を選ぶ。
-3.ベースタイルの左端タイルのみを選択する。
+3.左端のタイルのみ選択する。
 4.「セットアップ、選択、ペイント」項目の「選択」を選ぶ。
 5.アニメーション項目の「列」に全体のコマ数を入力。
 6.Framesの「要素を追加」で列と同じ分だけコマを増やす。

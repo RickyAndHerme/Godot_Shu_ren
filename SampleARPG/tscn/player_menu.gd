@@ -22,4 +22,4 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _process(delta: float) -> void:
 	player_init()	#フレームごとにプレイヤーのステータスを更新しているが改良の余地あり
-
+ 

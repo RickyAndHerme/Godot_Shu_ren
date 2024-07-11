@@ -8,4 +8,3 @@ func move(dir):
 	%RayCast2D.force_raycast_update()		#レイキャストの情報を即座に更新する
 	if !%RayCast2D.is_colliding():			#レイキャストに物体が触れていなければ
 		position += dir						#岩が押されている方向に動かす
-

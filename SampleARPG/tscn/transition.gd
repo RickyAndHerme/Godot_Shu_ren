@@ -26,8 +26,3 @@ func fade(path) -> void:
 	tw.tween_callback(%AnimationPlayer.play_backwards.bind(&"fade"))
 	tw.tween_interval(0.5)
 	tw.tween_callback(%AnimationPlayer.play.bind(&"RESET"))
-
-
-
-
-
