@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="TutorialSTG_STROKE"
+config/name="STG_SampleGame_STROKE"
 config/description="2Dシューティングゲームのサンプルプロジェクト。"
 config/version="1.1"
 run/main_scene="res://tscn/Title.tscn"

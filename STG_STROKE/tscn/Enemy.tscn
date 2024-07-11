@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dd76bcncj5fbo"]
 
-[ext_resource type="Script" path="res://tscn/Enemy.gd" id="1"]
+[ext_resource type="Script" path="res://tscn/enemy1.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://g0vg23jbm7wt" path="res://media/teki1.png" id="2"]
 
 [sub_resource type="CircleShape2D" id="1"]
