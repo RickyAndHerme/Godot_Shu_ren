@@ -104,7 +104,7 @@ specific language governing permissions and limitations under the License.
 2024/03/01 Ver1.3
 　・Godot4.3.dev4に対応
 
-2024/07/11 Ver.1.3.1
+2024/07/11 Ver.1.4
 　・Godot4.3.beta3に対応
 　・上下の移動ができないように修正
 
