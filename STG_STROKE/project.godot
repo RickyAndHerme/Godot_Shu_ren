@@ -12,7 +12,7 @@ config_version=5
 
 config/name="STG_SampleGame_STROKE"
 config/description="2Dシューティングゲームのサンプルプロジェクト。"
-config/version="1.1"
+config/version="1.2"
 run/main_scene="res://tscn/Title.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
