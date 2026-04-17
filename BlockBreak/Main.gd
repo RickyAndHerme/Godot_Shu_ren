@@ -15,3 +15,4 @@ func _process(delta: float) -> void:
 	
 	if Global.balls <= 0:
 		%GameOverCenterContainer.visible = true
+

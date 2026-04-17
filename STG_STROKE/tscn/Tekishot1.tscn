@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://ddte7q7i5hkcq"]
 
-[ext_resource type="Script" path="res://tscn/tekishot1.gd" id="1_glltl"]
-[ext_resource type="Texture2D" uid="uid://25wlfknwkyq4" path="res://media/tekishot1.png" id="2_gd6sy"]
+[ext_resource type="Script" path="res://tscn/tekishot1.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://25wlfknwkyq4" path="res://media/tekishot1.png" id="2"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 7.07107
@@ -32,11 +32,11 @@ _data = {
 [node name="tekishot1" type="Area2D" groups=["enemyshot"]]
 texture_filter = 1
 collision_layer = 8
-script = ExtResource("1_glltl")
+script = ExtResource("1")
 metadata/_edit_group_ = true
 
 [node name="Sprite" type="Sprite2D" parent="."]
-texture = ExtResource("2_gd6sy")
+texture = ExtResource("2")
 hframes = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
